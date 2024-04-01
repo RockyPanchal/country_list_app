@@ -63,6 +63,13 @@ void main() {
       expect(find.text('Algeria'), findsOneWidget);
     });
 
+    testWidgets('renders countries when CountriesLoaded and List is Empty', (tester) async {
+      when(() => mockCountryBloc.state).thenReturn(CountriesLoaded(const []));
+      await tester.pumpWidget(buildWidget());
+      await tester.pump(const Duration(milliseconds: 100));
+      expect(find.text('No Data Found'), findsOneWidget);
+    });
+
     testWidgets('CountryScreen should display error message when state is CountryError', (WidgetTester tester) async {
       when(()=>mockCountryBloc.state).thenReturn(CountryError('Error loading countries'));
       await tester.pumpWidget(buildWidget());
