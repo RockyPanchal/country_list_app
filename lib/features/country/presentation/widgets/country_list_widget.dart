@@ -1,10 +1,10 @@
-import 'package:country_list_app/features/country/domain/entity/country_data.dart';
+import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CountryListWidget extends StatelessWidget {
 
-  final List<CountryData> countries;
+  final List<CountryEntity> countries;
 
   const CountryListWidget({super.key, required this.countries});
 

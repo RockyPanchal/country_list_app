@@ -1,8 +1,8 @@
 import 'package:country_list_app/features/country/data/repo/country_repository.dart';
-import '../entity/country_data.dart';
+import '../entity/country_entity.dart';
 
 abstract class CountriesUseCase {
-  Future<List<CountryData>> execute();
+  Future<List<CountryEntity>> execute();
 }
 
 class CountriesUseCaseImpl implements CountriesUseCase {
@@ -11,7 +11,7 @@ class CountriesUseCaseImpl implements CountriesUseCase {
   CountriesUseCaseImpl(this.repository);
 
   @override
-  Future<List<CountryData>> execute() async {
+  Future<List<CountryEntity>> execute() async {
     return await repository.fetchCountries();
   }
 }

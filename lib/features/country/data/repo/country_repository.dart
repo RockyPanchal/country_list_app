@@ -1,11 +1,11 @@
 
-import 'package:country_list_app/features/country/domain/entity/country_data.dart';
+import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
 import '../data_source/country_data_source.dart';
 import '../mapper/country_mapper.dart';
 import '../model/country_model.dart';
 
 abstract class CountryRepository {
-  Future<List<CountryData>> fetchCountries();
+  Future<List<CountryEntity>> fetchCountries();
 }
 
 class CountryRepositoryImpl implements CountryRepository {
@@ -18,8 +18,8 @@ class CountryRepositoryImpl implements CountryRepository {
 
 
   @override
-  Future<List<CountryData>> fetchCountries() async {
+  Future<List<CountryEntity>> fetchCountries() async {
     List<Country> countryList = await countryDataSource.fetchCountries();
-    return countryMapper.mapToCountryData(countryList);
+    return countryMapper.mapToCountryEntity(countryList);
   }
 }

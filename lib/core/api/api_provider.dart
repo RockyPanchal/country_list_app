@@ -1,8 +1,8 @@
 import 'package:country_list_app/core/api/api_exception.dart';
+import 'package:country_list_app/core/network/network_connectivity.dart';
 import 'package:country_list_app/core/network/network_exception.dart';
 import 'package:http/http.dart' as http;
 import 'api_response.dart';
-import '../network/network_connectivity.dart';
 
 abstract class ApiProvider{
   Future<ApiResponse> get(String url);

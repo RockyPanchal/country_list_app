@@ -1,4 +1,4 @@
-import 'package:country_list_app/features/country/domain/entity/country_data.dart';
+import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class CountryState extends Equatable{}
@@ -14,7 +14,7 @@ class CountryLoading extends CountryState {
 }
 
 class CountriesLoaded extends CountryState {
-  final List<CountryData> countries;
+  final List<CountryEntity> countries;
 
   CountriesLoaded(this.countries);
   @override

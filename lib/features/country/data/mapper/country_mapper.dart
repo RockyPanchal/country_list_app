@@ -1,15 +1,15 @@
 import 'package:country_list_app/features/country/data/model/country_model.dart';
-import 'package:country_list_app/features/country/domain/entity/country_data.dart';
+import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
 
 abstract class CountryMapper{
-  List<CountryData> mapToCountryData(List<Country> countryList);
+  List<CountryEntity> mapToCountryEntity(List<Country> countryList);
 }
 
 
 class CountryMapperImpl implements CountryMapper{
   @override
-  List<CountryData> mapToCountryData(List<Country> countryList) {
-   return  countryList.map((element) => CountryData(countryName: element.countryName, region: element.region)).toList();
+  List<CountryEntity> mapToCountryEntity(List<Country> countryList) {
+   return  countryList.map((element) => CountryEntity(countryName: element.countryName)).toList();
   }
 
 }

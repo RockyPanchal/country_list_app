@@ -1,6 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:country_list_app/features/country/domain/use_cases/countries_usecase.dart';
-import 'package:country_list_app/features/country/domain/entity/country_data.dart';
+import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
 import 'package:country_list_app/features/country/presentation/bloc/country_bloc.dart';
 import 'package:country_list_app/features/country/presentation/bloc/country_events.dart';
 import 'package:country_list_app/features/country/presentation/bloc/country_states.dart';
@@ -31,7 +31,7 @@ void main() {
       expect(countryBloc.state, CountryInitial());
     });
 
-    final mockCountryData = [CountryData( countryName: 'india', region: 'asia')];
+    final mockCountryData = [CountryEntity( countryName: 'india')];
 
     blocTest<CountryBloc, CountryState>(
       'emits [CountryLoading, CountriesLoaded] when LoadCountriesEvent is added successfully',

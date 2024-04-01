@@ -1,5 +1,5 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:country_list_app/features/country/domain/entity/country_data.dart';
+import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
 import 'package:country_list_app/features/country/presentation/bloc/country_bloc.dart';
 import 'package:country_list_app/features/country/presentation/bloc/country_events.dart';
 import 'package:country_list_app/features/country/presentation/bloc/country_states.dart';
@@ -54,7 +54,7 @@ void main() {
 
     testWidgets('renders countries when CountriesLoaded', (tester) async {
       when(() => mockCountryBloc.state).thenReturn(CountriesLoaded([
-        CountryData(countryName: 'Algeria', region: 'Africa'),
+        CountryEntity(countryName: 'Algeria'),
       ]));
       await tester.pumpWidget(buildWidget());
       // Allow UI to update
