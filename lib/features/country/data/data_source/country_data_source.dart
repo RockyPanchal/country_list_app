@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'package:country_list_app/core/api/api_exception.dart';
 import 'package:country_list_app/core/api/api_provider.dart';
-import 'package:country_list_app/core/network/network_connectivity.dart';
 import 'package:country_list_app/core/network/network_exception.dart';
 import '../model/country_model.dart';
 
