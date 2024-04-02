@@ -1,8 +1,8 @@
 import 'package:country_list_app/core/api/api_provider.dart';
 import 'package:country_list_app/core/api/api_response.dart';
 import 'package:country_list_app/core/network/network_connectivity.dart';
-import 'package:country_list_app/features/country/data/data_source/country_data_source.dart';
-import 'package:country_list_app/features/country/data/model/country_model.dart';
+import 'package:country_list_app/features/country_list/data/data_source/country_data_source.dart';
+import 'package:country_list_app/features/country_list/data/model/country_model.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

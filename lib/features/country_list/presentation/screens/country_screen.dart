@@ -1,8 +1,8 @@
-import 'package:country_list_app/features/country/presentation/bloc/country_bloc.dart';
-import 'package:country_list_app/features/country/presentation/bloc/country_events.dart';
-import 'package:country_list_app/features/country/presentation/bloc/country_states.dart';
-import 'package:country_list_app/features/country/presentation/widgets/country_list_widget.dart';
-import 'package:country_list_app/features/country/presentation/widgets/empty_list_widget.dart';
+import 'package:country_list_app/features/country_list/presentation/bloc/country_bloc.dart';
+import 'package:country_list_app/features/country_list/presentation/bloc/country_events.dart';
+import 'package:country_list_app/features/country_list/presentation/bloc/country_states.dart';
+import 'package:country_list_app/features/country_list/presentation/widgets/country_list_widget.dart';
+import 'package:country_list_app/features/country_list/presentation/widgets/empty_list_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

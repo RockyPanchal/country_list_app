@@ -1,4 +1,4 @@
-import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
+import 'package:country_list_app/features/country_list/domain/entity/country_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

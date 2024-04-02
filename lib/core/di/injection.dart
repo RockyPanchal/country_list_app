@@ -1,10 +1,10 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:country_list_app/core/api/api_provider.dart';
 import 'package:country_list_app/core/network/network_connectivity.dart';
-import 'package:country_list_app/features/country/data/data_source/country_data_source.dart';
-import 'package:country_list_app/features/country/data/mapper/country_mapper.dart';
-import 'package:country_list_app/features/country/data/repo/country_repository.dart';
-import 'package:country_list_app/features/country/domain/use_cases/countries_usecase.dart';
+import 'package:country_list_app/features/country_list/data/data_source/country_data_source.dart';
+import 'package:country_list_app/features/country_list/data/mapper/country_mapper.dart';
+import 'package:country_list_app/features/country_list/data/repo/country_repository.dart';
+import 'package:country_list_app/features/country_list/domain/use_cases/countries_usecase.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart';
 

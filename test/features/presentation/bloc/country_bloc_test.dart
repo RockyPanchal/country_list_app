@@ -1,9 +1,9 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:country_list_app/features/country/domain/use_cases/countries_usecase.dart';
-import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
-import 'package:country_list_app/features/country/presentation/bloc/country_bloc.dart';
-import 'package:country_list_app/features/country/presentation/bloc/country_events.dart';
-import 'package:country_list_app/features/country/presentation/bloc/country_states.dart';
+import 'package:country_list_app/features/country_list/domain/use_cases/countries_usecase.dart';
+import 'package:country_list_app/features/country_list/domain/entity/country_entity.dart';
+import 'package:country_list_app/features/country_list/presentation/bloc/country_bloc.dart';
+import 'package:country_list_app/features/country_list/presentation/bloc/country_events.dart';
+import 'package:country_list_app/features/country_list/presentation/bloc/country_states.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

@@ -1,4 +1,4 @@
-import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
+import 'package:country_list_app/features/country_list/domain/entity/country_entity.dart';
 import 'package:equatable/equatable.dart';
 
 abstract class CountryState extends Equatable{}

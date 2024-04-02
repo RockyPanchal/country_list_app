@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'core/di/injection.dart';
-import 'features/country/domain/use_cases/countries_usecase.dart';
-import 'features/country/presentation/bloc/country_bloc.dart';
-import 'features/country/presentation/screens/country_screen.dart';
+import 'features/country_list/domain/use_cases/countries_usecase.dart';
+import 'features/country_list/presentation/bloc/country_bloc.dart';
+import 'features/country_list/presentation/screens/country_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 

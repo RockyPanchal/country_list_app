@@ -1,5 +1,5 @@
 
-import 'package:country_list_app/features/country/domain/entity/country_entity.dart';
+import 'package:country_list_app/features/country_list/domain/entity/country_entity.dart';
 import '../data_source/country_data_source.dart';
 import '../mapper/country_mapper.dart';
 import '../model/country_model.dart';

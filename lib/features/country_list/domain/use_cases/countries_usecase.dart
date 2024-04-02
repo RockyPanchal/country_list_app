@@ -1,4 +1,4 @@
-import 'package:country_list_app/features/country/data/repo/country_repository.dart';
+import 'package:country_list_app/features/country_list/data/repo/country_repository.dart';
 import '../entity/country_entity.dart';
 
 abstract class CountriesUseCase {

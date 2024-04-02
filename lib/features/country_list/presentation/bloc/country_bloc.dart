@@ -1,4 +1,4 @@
-import 'package:country_list_app/features/country/domain/use_cases/countries_usecase.dart';
+import 'package:country_list_app/features/country_list/domain/use_cases/countries_usecase.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'country_events.dart';
 import 'country_states.dart';
